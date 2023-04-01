@@ -3,6 +3,7 @@ CFLAGS=-O3 -g
 EXEC=louvain
 
 all: $(EXEC)
+	./louvain graph.el graph.out  
 
 louvain: partition.o louvain.o
 	$(CC) -o louvain partition.o louvain.o $(CFLAGS)
