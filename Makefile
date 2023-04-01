@@ -15,3 +15,6 @@ clean:
 
 %.o: %.c
 	$(CC) -o $@ -c $< $(CFLAGS)
+
+run:
+	./louvain graph.el graph.out    

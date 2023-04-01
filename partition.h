@@ -52,6 +52,8 @@ typedef struct {
 } louvainPartition;
 
 
+void printClusterPartition(louvainPartition *partition);
+
 unsigned long louvain(adjlist *g,unsigned long *lab);
 
 //inline long double degreeWeighted(adjlist *g, unsigned long node);

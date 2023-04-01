@@ -128,7 +128,7 @@ adjlist* readadjlist(char* input){
     d[i-1]=0;
   }
 
-  g->adj=malloc(2*g->e*sizeof(unsigned long));
+  g->d=malloc(2*g->e*sizeof(unsigned long));
 
   file=fopen(input,"r");//secong reading to fill the adjlist
   while (fscanf(file,"%lu %lu", &u, &v)==2) {
